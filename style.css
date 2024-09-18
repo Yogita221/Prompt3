@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+.page{
+    width:100% ;
+    height:100%;
+   background-image:url(image.jpg);
+   background-size: cover;
+   background-position: top;
+   background-repeat: no-repeat;
+   position: fixed;
+  
+}
+.page .nav{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    
+}
+.nav .box1{
+    width:25% ;
+    height:150px ;
+    display: flex;
+    gap: 20px;
+    
+   
+}
+.nav .box1 img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 20px 0px 0px 20px;
+ 
+   
+}
+.nav .box1 h1{
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-top: 40px;
+    font-weight: solid;
+    
+
+}
+.nav .box2{
+    width:50% ;
+    height:150px ;
+    padding-left: 40px;
+    padding-top: 40px;
+   
+       
+}
+.nav .box2 a{
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: solid; 
+    transition: linear 0.2s;
+    
+}
+.nav .box2 a:hover{
+    background-color: transparent;
+    color: black;
+}
+
+
+.nav .box3{
+    width:25% ;
+    height:150px ;
+   
+}
+.nav .box3 button{
+    
+    width: 150px;
+    height: 40px;
+    margin-top: 40px;
+    margin-left:165px;
+    border: none;
+    background-color: white;
+    color:rgb(10, 10, 41);
+    font-size: 18px;
+    font-weight: 40px;
+    border-radius: 25px;
+    font-family: sans-serif;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+.nav .box3 button:hover{
+    background-color: transparent;
+    color: rgb(84, 107, 160);
+}
+
+.page .container{
+    height: 400px;
+    width: 500px;
+    margin-left: 22px;
+   
+}
+
+.page .container h1{
+    font-size: 30px;
+    word-spacing: 2px;
+    font-family: sans-serif;
+    text-align: left;
+    color: white;
+}
+
+.page .container p{
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+    padding-top: 25px;
+
+}
+.page .container > .inner-container{
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    margin-top: 30px;
+    display: flex;
+    border-radius: 35px;
+    margin-left: 5px;
+   
+   
+}
+.inner-container img{
+    height: 50px;
+    width: 80px;
+    border-radius: 50%;
+   
+}
+.inner-container button{
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: solid;
+  border: none;
+  letter-spacing: 0.5px;
+  border-radius: 40px;
+  padding-left: 7px;
+ 
+}
+
+.inner-container button:hover{
+    background-color:transparent;
+    color: rgb(28, 2, 52);
+}
+
+.music-player{
+    width: 100%;
+    height:500px;
+   
+}
+
+.music-player .progress-controller{
+    font-size: 20px;
+    margin-left:-15%;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color:white;
+}
+.control-buttons{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.play-pause{
+    display: inline-block;
+    padding: 20px;
+    background-color:white;
+    color: #111;
+    border-radius: 50%;
+}
+.play-pause:hover{
+    transform: scale(1.1);
+    color: #111;
+}
+.progress-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+} 
+.progress-bar{
+    height: 8px;
+    border-radius: 10px;
+    width: 30%;
+    background-color: rgb(169, 165, 165);
+}
+.progress{
+    position: relative;
+    height: 100%;
+    width: 30%;
+    border-radius: 10px;
+    background-color: white;
+}
+.progress-bar:hover .progress{
+    background-color:#4011ad;
+}
